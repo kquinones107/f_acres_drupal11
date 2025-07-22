@@ -3,7 +3,7 @@ type: theme
 description: 'Tema personalizado basado en Bootstrap 5 para el sitio web de la Fundación Acres.'
 core_version_requirement: ^11
 package: Custom
-base theme: classy
+base theme: bootstrap5
 
 libraries:
   - fundacion_acres/global-styling
