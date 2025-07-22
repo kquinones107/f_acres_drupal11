@@ -1,0 +1,19 @@
+:root {
+  --azul-fundacres: #0255A4;
+  --celeste-fundacres: #A9CCE3;
+  --amarillo-fundacres: #FECA35;
+  --gris-claro: #E6E6E6;
+  --gris-texto: #8A8A89;
+  --negro-suave: #333333;
+  --amarillo-suave: #FFF4CC;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--gris-claro);
+  color: var(--negro-suave);
+}
+
+a {
+  color: var(--azul-fundacres);
+}

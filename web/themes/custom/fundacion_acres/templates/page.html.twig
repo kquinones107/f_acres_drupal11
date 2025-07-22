@@ -1,0 +1,69 @@
+{# themes/custom/fundacion_acres/templates/page.html.twig #}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+  </head>
+  <body>
+
+    {# HEADER REGION #}
+    <header class="bg-dark text-white py-3">
+      <div class="container">
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+      </div>
+    </header>
+
+    {# NAVIGATION REGION #}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        {% if page.navigation %}
+          {{ page.navigation }}
+        {% endif %}
+      </div>
+    </nav>
+
+    {# HERO SECTION (optional block or static) #}
+    {% if page.hero %}
+      <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+          {{ page.hero }}
+        </div>
+      </section>
+    {% endif %}
+
+    {# MAIN CONTENT AND SIDEBAR #}
+    <main class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            {% if page.content %}
+              {{ page.content }}
+            {% endif %}
+          </div>
+          <aside class="col-md-4">
+            {% if page.sidebar %}
+              {{ page.sidebar }}
+            {% endif %}
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    {# FOOTER REGION #}
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        {% if page.footer %}
+          {{ page.footer }}
+        {% endif %}
+      </div>
+    </footer>
+
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+  </body>
+</html>

@@ -1,0 +1,21 @@
+name: Fundación Acres
+type: theme
+description: 'Tema personalizado basado en Bootstrap 5 para el sitio web de la Fundación Acres.'
+core_version_requirement: ^11
+package: Custom
+base theme: classy
+
+libraries:
+  - fundacion_acres/global-styling
+
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  hero: 'Hero'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+
+# Para soporte de layout builder (opcional)
+features:
+  - layouts
