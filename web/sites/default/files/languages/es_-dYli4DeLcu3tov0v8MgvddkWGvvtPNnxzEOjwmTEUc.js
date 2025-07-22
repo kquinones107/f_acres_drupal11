@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Extend":"Extender","Edit":"Editar"}},"pluralFormula":{"1":0,"default":1}};
